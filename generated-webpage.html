@@ -1,0 +1,154 @@
+Here is the HTML and CSS code for the given wireframe:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoso Outdoor Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contoso Outdoor Company</h1>
+    </header>
+    <main>
+        <section class="category">
+            <h2>Tents</h2>
+            <p>Unfold adventure with Contoso's range of tents</p>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="TrailMaster X4 Tent">
+                    <h3>TrailMaster X4 Tent</h3>
+                    <p>$200</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Alpine Explorer Tent">
+                    <h3>Alpine Explorer Tent</h3>
+                    <p>$300</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="SkyView 2-Person Tent">
+                    <h3>SkyView 2-Person Tent</h3>
+                    <p>$380</p>
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Backpacker</h2>
+            <p>Our backpack category is equipped to accompany you in every twist and turn.</p>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Adventurer Pro Backpack">
+                    <h3>Adventurer Pro Backpack</h3>
+                    <p>$60</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Summit Climber Backpack">
+                    <h3>Summit Climber Backpack</h3>
+                    <p>$70</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="TrailLite DayPack">
+                    <h3>TrailLite DayPack</h3>
+                    <p>$40</p>
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Hiking Clothing</h2>
+            <p>Step into nature with Contoso outdoor's hiking clothing.</p>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="Summit Hike Jacket">
+                    <h3>Summit Hike Jacket</h3>
+                    <p>$60</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="TrailBlaze Pants">
+                    <h3>TrailBlaze Pants</h3>
+                    <p>$80</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150" alt="TrekStar Boots">
+                    <h3>TrekStar Boots</h3>
+                    <p>$120</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+```
+
+```css
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.category {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.category h2 {
+    margin-top: 0;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1em;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+```
+
+To use this code, save the HTML code in a file named `index.html` and the CSS code in a file named `style.css` in the same directory. Open `index.html` in a web browser to view the webpage.
+
+This code creates a responsive webpage with a header, main content area, and three categories: Tents, Backpacker, and Hiking Clothing. Each category has a heading, description, and a grid of products with images, names, and prices. The layout is responsive and adapts to different screen sizes.
